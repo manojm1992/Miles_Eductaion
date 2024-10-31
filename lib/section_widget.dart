@@ -38,41 +38,7 @@ class SectionWidget extends StatelessWidget {
           itemBuilder: (context, index) {
             final post = section.posts![index];
             final imageUrl = post.files?.first.imagePath ?? '';
-            return
-            //   Column(
-            //   crossAxisAlignment: CrossAxisAlignment.start,
-            //   children: [
-            //     Image.network(
-            //       imageUrl,
-            //       fit: BoxFit.cover,
-            //       width: double.infinity,
-            //        height: 100,
-            //       errorBuilder: (context, error, stackTrace) => SizedBox(
-            //
-            //         child: Image.asset(
-            //           'assets/file 1.png', // Provide a local fallback image here
-            //           fit: BoxFit.cover,
-            //           height: 100,
-            //           width: double.infinity,
-            //         ),
-            //       ),
-            //     ),
-            //     const SizedBox(height: 5),
-            //     Text(
-            //       overflow: TextOverflow.ellipsis,
-            //       maxLines: 1,
-            //       post.title ?? 'No Title',
-            //       style: TextStyle(color: Colors.white, fontSize: 16),
-            //     ),
-            //     Text(
-            //       overflow: TextOverflow.ellipsis,
-            //       maxLines: 1,
-            //       post.description ?? 'No Description',
-            //       style: TextStyle(color: Colors.white70, fontSize: 12),
-            //     ),
-            //   ],
-            // );
-             PostCard(post: post);
+            return PostCard(post: post);
           },
         ),
       ],
